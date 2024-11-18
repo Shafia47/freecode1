@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We would love to hear your feedback to improve our service.</p>
+
+    <form id="survey-form">
+        <!-- Name Field -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Email Field -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Number Field -->
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100" required>
+
+        <!-- Dropdown Field -->
+        <label for="dropdown">What is your current role?</label>
+        <select id="dropdown" name="role">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p>How did you find us?</p>
+        <label><input type="radio" name="find-us" value="social-media" required> Social Media</label>
+        <label><input type="radio" name="find-us" value="friend" required> Friend</label>
+        <label><input type="radio" name="find-us" value="advertisement" required> Advertisement</label>
+
+        <!-- Checkboxes -->
+        <p>Which services are you interested in?</p>
+        <label><input type="checkbox" name="service" value="web-development"> Web Development</label>
+        <label><input type="checkbox" name="service" value="data-analysis"> Data Analysis</label>
+        <label><input type="checkbox" name="service" value="machine-learning"> Machine Learning</label>
+
+        <!-- Textarea -->
+        <label for="comments">Any additional comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
